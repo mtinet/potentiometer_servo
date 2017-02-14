@@ -16,7 +16,7 @@ void loop()
   val = analogRead(sensorPin);
   Serial.print(val);
   Serial.print("   ");
-  val = map(val, 0, 1024, 0,180);
+  val = map(val, 0, 1023, 0,180);
   servo1.write(val);
   Serial.println(val);
   delay(100);
